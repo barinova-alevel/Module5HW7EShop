@@ -11,9 +11,9 @@ export default class CatalogStore {
     @observable totalPages = 0;
     @observable currentPage = 1;
 
-    constructor(   
-        @inject(ownTypes.catalogService) private readonly catalogService: CatalogService
-   ) {
+    @inject(ownTypes.catalogService) 
+    private readonly catalogService!: CatalogService;
+    constructor() {
        makeObservable(this);
    }
 

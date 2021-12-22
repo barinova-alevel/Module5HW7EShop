@@ -1,4 +1,4 @@
-import { observer } from 'mobx-react';
+import { observer } from 'mobx-react-lite';
 import React from 'react'
 import { Button, Col, Container, Form, Row, Spinner } from 'react-bootstrap'
 import { useInjection } from '../../ioc/ioc.react';

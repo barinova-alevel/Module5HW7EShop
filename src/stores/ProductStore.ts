@@ -9,9 +9,9 @@ export default class ProductStore {
     @observable product: Product | null = null;
     @observable isLoading = false;
 
-    constructor(
-        @inject(ownTypes.catalogService) private readonly catalogService: CatalogService
-    ) {
+    @inject(ownTypes.catalogService) 
+    private readonly catalogService!: CatalogService
+    constructor() {
         makeObservable(this);
     }
 
