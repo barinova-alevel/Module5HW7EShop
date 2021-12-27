@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { BrowserRouter, Link, Outlet, Route, Routes } from 'react-router-dom';
 import Catalog from './containers/Catalog';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -24,20 +24,28 @@ function App() {
 function Layout() {
   return (
     <div>
-      <h1>Welcome to the app!</h1>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/catalog">Catalog</Link>
-          </li>
-          <li>
-            <Link to="/basket">Basket</Link>
-          </li>
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-        </ul>
-      </nav>
+      <Navbar bg="light" expand="lg">
+        <Container>
+          <Navbar.Brand href="/catalog">
+            <img
+              src="/images/nfk.svg"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+              alt="logo"
+            />{' '}
+            Mobiles
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href='/catalog'>Catalog</Nav.Link>
+              <Nav.Link href='/basket'>Basket</Nav.Link>
+              <Nav.Link href="/login">Login</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
       <Container className="pt-4 pb-4">
         <Outlet />
       </Container>
