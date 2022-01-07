@@ -7,6 +7,7 @@ export default {
     catalogService: Symbol("catalogService"),
     catalogStore: Symbol("catalogStore"),
     productStore: Symbol("prouctStore"),
-    loginStore: Symbol("loginStore")
+    loginStore: Symbol("loginStore"),
+    basketStore: Symbol("basketStore")
 };
 

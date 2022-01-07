@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { IoCProvider } from './ioc/ioc.react';
 import { container } from './ioc/ioc';
-import "reflect-metadata";
 
 ReactDOM.render(
   <React.StrictMode>

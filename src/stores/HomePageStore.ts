@@ -1,6 +1,5 @@
 import { injectable } from "inversify";
 import { action, makeObservable, observable } from "mobx";
-import "reflect-metadata";
 
 export enum TabsType {
   Catalog,

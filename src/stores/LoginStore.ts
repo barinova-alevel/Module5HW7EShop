@@ -1,51 +1,48 @@
 import { inject, injectable } from "inversify";
 import { action, makeObservable, observable, runInAction } from "mobx";
 import ownTypes from "../ioc/ownTypes";
-import type AuthenticationService from "../services/AuthenticationService";
+import { User } from "../models/User";
+import type AuthenticationService from "../services/AuthService";
 
 @injectable()
 export default class LoginStore {
 
-    @observable email = '';
-    @observable password = '';
-    @observable isLoading = false;
-    @observable error = '';
-    @observable token = '';
+  readonly userIdKey: string = "logged_userid";
+  @observable isLoading = false;
+  @observable error = '';
+  @observable user: User | null = null;
 
-    constructor(   
-        @inject(ownTypes.authenticationService) private readonly authenticationService: AuthenticationService
-   ) {
-       makeObservable(this);
-   }
+  @inject(ownTypes.authenticationService)
+  private readonly authenticationService!: AuthenticationService
+  constructor() {
+    makeObservable(this);
+  }
 
-    @action
-    public login = async () => {
-        this.token = '';
-        this.error = '';
-        try {
-            this.isLoading = true;
-            const result = await this.authenticationService.login(this.email, this.password);
-            runInAction(()=> {           
-                 this.token = result.token;
-            });
-            
-          } catch (e) {
-            if (e instanceof Error) {
-                this.error = e.message;
-            }
-          }
-          runInAction(()=> {
-            this.isLoading = false;
-        });
+  @action
+  public setUser = async (userId: string) => {
+    this.user = await this.authenticationService.getUserById(userId)
+  }
+
+  @action
+  public login = async (email: string, password: string) => {
+    this.error = '';
+    this.user = null;
+    try {
+      this.isLoading = true;
+      const result = await this.authenticationService.login(email, password);
+      this.user = result;
+      localStorage.setItem(this.userIdKey, result.id);
+    } catch (e) {
+      if (e instanceof Error) {
+        this.error = e.message;
+      }
     }
+    this.isLoading = false;
+  }
 
-    @action
-    public changeEmail = (text: string) : void => {
-      this.email = text;
-    }
-
-    @action
-    public changePassword = (text: string) : void => {
-      this.password = text;
-    }
+  @action
+  public logOut = (): void => {
+    localStorage.removeItem(this.userIdKey);
+    this.user = null;
+  }
 }
