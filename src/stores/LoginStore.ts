@@ -18,9 +18,11 @@ export default class LoginStore {
     makeObservable(this);
   }
 
-  @action
-  public setUser = async (userId: string) => {
-    this.user = await this.authenticationService.getUserById(userId)
+  @action restoreUser = async () => {
+    const userId = localStorage.getItem(this.userIdKey);
+    if (userId) {
+      this.user = await this.authenticationService.getUserById(userId)
+    }
   }
 
   @action
@@ -44,5 +46,9 @@ export default class LoginStore {
   public logOut = (): void => {
     localStorage.removeItem(this.userIdKey);
     this.user = null;
+  }
+
+  get isUserLoggedIn() {
+    return this.user != null;
   }
 }

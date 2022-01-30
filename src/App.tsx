@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import "reflect-metadata";
-import { Container, Nav, Navbar } from 'react-bootstrap';
-import { BrowserRouter, Link, Outlet, Route, Routes } from 'react-router-dom';
+import { Badge, Container, Nav, Navbar, NavbarBrand, NavLink } from 'react-bootstrap';
+import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
 import Catalog from './containers/Catalog';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap-icons/font/bootstrap-icons.css";
 import ProductDetails from './components/ProductDetails';
 import Login from './pages/Login';
 import LoginStore from './stores/LoginStore';
@@ -11,22 +12,26 @@ import ownTypes from './ioc/ownTypes';
 import { types, useInjection } from './ioc';
 import { observer } from 'mobx-react-lite';
 import Basket from './components/Basket';
-
+import BasketStore from './stores/BasketStore';
+import { LinkContainer } from 'react-router-bootstrap'
+import logo from './images/icon.png'
+import './App.css'
+import './locales/config';
+import { Icon } from './components/Utils';
 
 function App() {
-  const store = useInjection<LoginStore>(ownTypes.loginStore);
-  useEffect(() =>{
-     const userId = localStorage.getItem("logged_userid");
-     if (userId){
-            store.setUser(userId)
-     }
-  },[])
+  const loginStore = useInjection<LoginStore>(ownTypes.loginStore);
+  const basketStore = useInjection<BasketStore>(ownTypes.basketStore);
+  useEffect(() => {
+    loginStore.restoreUser();
+    basketStore.restoreBasket();
+  }, [])
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="catalog" element={<Catalog />} />
+        <Route path="/" element={<Layout />} >
+          <Route path="" element={<Catalog />} />
           <Route path="product/:id" element={<ProductDetails />} />
           <Route path="basket" element={<Basket />} />
           <Route path="login" element={<Login />} />
@@ -39,42 +44,60 @@ function App() {
 function Layout() {
   return (
     <div>
-      <Navbar bg="light" expand="lg">
-        <Container>
-          <Link to="/catalog">
-            <img
-              src="/images/nfk.svg"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt=""
-            />{' '}
-            Mobiles
-          </Link>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Link to='/catalog'>Catalog</Link>
-            </Nav>
-            <Nav className="justify-content-end">
-              <Link to='/basket'>Basket</Link>
-              <LoginNav />
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-      <Container className="pt-4 pb-4">
+      <header>
+        <Navbar fixed='top' variant='light' className="bg-light" expand="sm">
+          <Container>
+            <LinkContainer to='/'>
+              <NavbarBrand>
+                <img
+                  src={logo}
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top" alt="" />
+                Mobiles
+              </NavbarBrand>
+            </LinkContainer>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <LinkContainer to="/">
+                  <NavLink>Catalog</NavLink>
+                </LinkContainer>
+              </Nav>
+              <Nav className="justify-content-end">
+                <LinkContainer to='/basket'>
+                  <NavLink>
+                    <BasketIcon />
+                  </NavLink>
+                </LinkContainer>
+                <LoginNav />
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </header>
+      <main role="main">
         <Outlet />
-      </Container>
-    </div>
+      </main>
+    </div >
   );
 }
 
+const BasketIcon = observer(() => {
+  const store = useInjection<BasketStore>(types.basketStore)
+  return <div>
+    <Icon name="basket" size={20} />
+    {
+      !!store.totalCount && <Badge className="small-badge" bg="dark" pill>{store.totalCount}</Badge>
+    }
+  </div>
+});
+
 const LoginNav = observer(() => {
   const store = useInjection<LoginStore>(types.loginStore)
-  return(
-    <Link to="/login">{store.user ? store.user.firstName : "Login"}</Link>
-  )
+  return <LinkContainer to="/login">
+    <NavLink>{store.user ? `Hello, ${store.user.firstName}` : "Login"}</NavLink>
+  </LinkContainer>
 })
 
 export default App;

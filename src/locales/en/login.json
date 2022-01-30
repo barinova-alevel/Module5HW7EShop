@@ -1,7 +1,8 @@
 {
     "placeholder": {
-      "email": "Enter email",
+      "email": "Email address",
       "password": "Password"
     },
-    "submit": "Submit"
+    "submit": "Sign in",
+    "signInText": "Please sign in"
 }

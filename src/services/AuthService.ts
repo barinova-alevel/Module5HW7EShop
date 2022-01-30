@@ -31,7 +31,7 @@ export default class BaseAuthenticationService implements AuthenticationService 
     public login(email: string, password: string): Promise<User> {
         let user = this.users.find((user) => user.email == email);
         if (!user) {
-            throw new Error("user not found")
+            throw new Error("User not found")
         }
         return Promise.resolve<User>(user);
     }

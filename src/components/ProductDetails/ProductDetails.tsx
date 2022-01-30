@@ -1,10 +1,12 @@
 import { useEffect } from 'react'
-import { Card, Container } from 'react-bootstrap'
+import { Card, Col, Container, Row } from 'react-bootstrap'
 import { observer } from 'mobx-react-lite'
 import { useInjection } from '../../ioc/ioc.react'
 import ownTypes from '../../ioc/ownTypes'
 import ProductStore from '../../stores/ProductStore'
 import { useParams } from 'react-router-dom'
+import AddToBasketButton from '../AddToBasketButton'
+import { Price } from '../Utils'
 
 
 const ProductDetails = observer(() => {
@@ -18,18 +20,31 @@ const ProductDetails = observer(() => {
         return null;
     }
 
-    const { name, id, price, avatar } = store.product
+    const { name, price, avatar, description } = store.product
     return (
         <Container>
-            <Card style={{ cursor: "pointer" }}>
-                <Card.Img variant="top" src={avatar} />
-                <Card.Body>
-                    <Card.Title>{name} {id}</Card.Title>
-                    <Card.Text>
-                        {price}
-                    </Card.Text>
-                </Card.Body>
-            </Card>
+            <Row>
+                <Col md={{ offset: 1, span: 10 }}>
+                    <div className="d-flex">
+                        <div className="flex-shrink-0">
+                            <img
+                                className="media-object"
+                                src={avatar}
+                                style={{ width: 400, height: 400 }} />
+                        </div>
+                        <div className="flex-grow-1 ms-3">
+                            <h3>{name}</h3>
+                            <div>
+                                {description}
+                            </div>
+                            <div className='d-flex mt-4'>
+                                <Price className="me-auto" value={price} />
+                                <AddToBasketButton product={store.product} />
+                            </div>
+                        </div>
+                    </div>
+                </Col>
+            </Row>
         </Container>
     )
 });

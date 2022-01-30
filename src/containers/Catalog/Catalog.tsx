@@ -6,7 +6,6 @@ import { observer } from 'mobx-react-lite'
 import { useInjection } from '../../ioc/ioc.react'
 import CatalogStore from '../../stores/CatalogStore'
 import ownTypes from '../../ioc/ownTypes'
-import ProductStore from '../../stores/ProductStore'
 
 const Catalog = observer(() => {
   const store = useInjection<CatalogStore>(ownTypes.catalogStore);
@@ -17,19 +16,18 @@ const Catalog = observer(() => {
 
   return (
     <Container>
-      <Row className="justify-content-center">
+      <Row>
         {store.isLoading ? (
           <Spinner animation="border" />
         ) : (
           <>
             {store.products?.map((product, key) => (
-              <Col key={key} sm={6} md={4} lg={3} xl={2} className="mb-2 mt-2">
+              <Col key={key} sm={6} md={6} lg={3} xl={3}>
                 {<ProductCard product={product} /> }
               </Col>
             ))}
           </>
         )}
-
       </Row>
       <Pagination total={store.totalPages} active={store.currentPage} onChange={(val) => { store.changePage(val) }} />
     </Container>

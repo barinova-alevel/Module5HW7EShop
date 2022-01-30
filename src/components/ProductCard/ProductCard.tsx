@@ -1,53 +1,37 @@
-import React from 'react'
-import { Button, Card } from 'react-bootstrap'
+import { Card, ButtonGroup } from 'react-bootstrap'
 import { Product } from '../../models/Product'
 import { useNavigate } from 'react-router-dom';
-import ownTypes from '../../ioc/ownTypes';
-import { types, useInjection } from '../../ioc';
-import BasketStore from '../../stores/BasketStore';
-import { observable } from 'mobx';
-import { observer } from 'mobx-react-lite';
+import AddToBasketButton from '../AddToBasketButton';
+import { Price } from '../Utils';
 
 interface Props {
   product: Product | null
 }
 
 const ProductCard = (props: Props) => {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
   if (!props.product) {
     return null
   }
   const { name, id, price, avatar } = props.product
 
   return (
-    <Card onClick={() => { navigate(`/product/${id}`); }} style={{ cursor: "pointer" }}>
-      <Card.Img variant="top" src={avatar} />
+    <Card
+      className='box-shadow mx-2 mb-3'
+      onClick={() => { navigate(`/product/${id}`); }}
+      style={{ cursor: "pointer" }}>
+      <Card.Img variant="top" src={avatar} width={320} height={320}/>
       <Card.Body>
-        <Card.Title>{name} {id}</Card.Title>
-        <Card.Text>
-          {price}
-        </Card.Text>
-        <AddToBasketButton product={props.product} />
+        <Card.Title title={name} className='text-overflow'>{name}</Card.Title>
+        <div className="d-flex justify-content-between align-items-center">
+          <div>
+            <Price value={price} />
+          </div>
+          <AddToBasketButton product={props.product} />
+        </div>
       </Card.Body>
     </Card>
   )
 }
-
-interface ButtonProps {
-  product: Product
-}
-
-const AddToBasketButton = observer((props: ButtonProps) => {
-  const { product } = props
-  const store = useInjection<BasketStore>(types.basketStore)
-  return (
-    <Button onClick={(e:React.MouseEvent<HTMLButtonElement>) => {
-      e.stopPropagation() 
-      store.addToBasket(product)  
-      }}>
-      {product.isInBasket ? "Added to basket" : "Add to basket"}
-    </Button>
-  )
-})
 
 export default ProductCard
