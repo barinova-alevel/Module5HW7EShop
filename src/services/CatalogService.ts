@@ -25,101 +25,721 @@ export default class DefaultUserService implements CatalogService {
             id: 2,
             name: "Apple iPhone 13 Pro",
             price: 38499,
-            avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-apple.png",
+            avatar: "https://content1.rozetka.com.ua/goods/images/big/175435404.jpg",
             description: `Экран (6.1", OLED (Super Retina XDR), 2532x1170) / Apple A15 Bionic / тройная основная камера: 12 Мп + 12 Мп + 12 Мп, фронтальная камера: 12 Мп / 128 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM / iOS 15`
         },{
-            id: 2,
-            name: "Apple iPhone 13 Pro",
-            price: 38499,
-            avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-apple.png",
-            description: `Экран (6.1", OLED (Super Retina XDR), 2532x1170) / Apple A15 Bionic / тройная основная камера: 12 Мп + 12 Мп + 12 Мп, фронтальная камера: 12 Мп / 128 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM / iOS 15`
+            id: 3,
+            name: "ZTE Blade V2020 Smart 4/64GB Grey",
+            price: 4399,
+            avatar: "https://content1.rozetka.com.ua/goods/images/big/175471778.jpg",
+            description: `Стандарт связи
+            2G (GPRS/EDGE)
+            3G (WCDMA/UMTS/HSPA)
+            4G (LTE)
+            Дисплей
+            Диагональ экрана
+            6.5
+            Разрешение дисплея
+            1600 х 720
+            Тип матрицы
+            PLS
+            Частота обновления экрана
+            90 Гц
+            СИМ-карты`
         },{
-            id: 2,
-            name: "Apple iPhone 13 Pro",
-            price: 38499,
-            avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-apple.png",
-            description: `Экран (6.1", OLED (Super Retina XDR), 2532x1170) / Apple A15 Bionic / тройная основная камера: 12 Мп + 12 Мп + 12 Мп, фронтальная камера: 12 Мп / 128 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM / iOS 15`
-        },{
-            id: 2,
-            name: "Apple iPhone 13 Pro",
-            price: 38499,
-            avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-apple.png",
-            description: `Экран (6.1", OLED (Super Retina XDR), 2532x1170) / Apple A15 Bionic / тройная основная камера: 12 Мп + 12 Мп + 12 Мп, фронтальная камера: 12 Мп / 128 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM / iOS 15`
-        },{
-            id: 2,
-            name: "Apple iPhone 13 Pro",
-            price: 38499,
-            avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-apple.png",
-            description: `Экран (6.1", OLED (Super Retina XDR), 2532x1170) / Apple A15 Bionic / тройная основная камера: 12 Мп + 12 Мп + 12 Мп, фронтальная камера: 12 Мп / 128 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM / iOS 15`
-        },{
-            id: 2,
-            name: "Apple iPhone 13 Pro",
-            price: 38499,
-            avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-apple.png",
-            description: `Экран (6.1", OLED (Super Retina XDR), 2532x1170) / Apple A15 Bionic / тройная основная камера: 12 Мп + 12 Мп + 12 Мп, фронтальная камера: 12 Мп / 128 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM / iOS 15`
-        },{
-            id: 2,
-            name: "Apple iPhone 13 Pro",
-            price: 38499,
-            avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-apple.png",
-            description: `Экран (6.1", OLED (Super Retina XDR), 2532x1170) / Apple A15 Bionic / тройная основная камера: 12 Мп + 12 Мп + 12 Мп, фронтальная камера: 12 Мп / 128 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM / iOS 15`
-        },{
-            id: 2,
-            name: "Apple iPhone 13 Pro",
-            price: 38499,
-            avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-apple.png",
-            description: `Экран (6.1", OLED (Super Retina XDR), 2532x1170) / Apple A15 Bionic / тройная основная камера: 12 Мп + 12 Мп + 12 Мп, фронтальная камера: 12 Мп / 128 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM / iOS 15`
-        },{
-            id: 2,
-            name: "Apple iPhone 13 Pro",
-            price: 38499,
-            avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-apple.png",
-            description: `Экран (6.1", OLED (Super Retina XDR), 2532x1170) / Apple A15 Bionic / тройная основная камера: 12 Мп + 12 Мп + 12 Мп, фронтальная камера: 12 Мп / 128 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM / iOS 15`
-        },{
-            id: 2,
-            name: "Apple iPhone 13 Pro",
-            price: 38499,
-            avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-apple.png",
-            description: `Экран (6.1", OLED (Super Retina XDR), 2532x1170) / Apple A15 Bionic / тройная основная камера: 12 Мп + 12 Мп + 12 Мп, фронтальная камера: 12 Мп / 128 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM / iOS 15`
-        },{
-            id: 2,
-            name: "Apple iPhone 13 Pro",
-            price: 38499,
-            avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-apple.png",
-            description: `Экран (6.1", OLED (Super Retina XDR), 2532x1170) / Apple A15 Bionic / тройная основная камера: 12 Мп + 12 Мп + 12 Мп, фронтальная камера: 12 Мп / 128 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM / iOS 15`
-        },{
-            id: 2,
-            name: "Apple iPhone 13 Pro",
-            price: 38499,
-            avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-apple.png",
-            description: `Экран (6.1", OLED (Super Retina XDR), 2532x1170) / Apple A15 Bionic / тройная основная камера: 12 Мп + 12 Мп + 12 Мп, фронтальная камера: 12 Мп / 128 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM / iOS 15`
-        },{
-            id: 2,
-            name: "Apple iPhone 13 Pro",
-            price: 38499,
-            avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-apple.png",
-            description: `Экран (6.1", OLED (Super Retina XDR), 2532x1170) / Apple A15 Bionic / тройная основная камера: 12 Мп + 12 Мп + 12 Мп, фронтальная камера: 12 Мп / 128 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM / iOS 15`
-        },{
-            id: 2,
-            name: "Apple iPhone 13 Pro",
-            price: 38499,
-            avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-apple.png",
-            description: `Экран (6.1", OLED (Super Retina XDR), 2532x1170) / Apple A15 Bionic / тройная основная камера: 12 Мп + 12 Мп + 12 Мп, фронтальная камера: 12 Мп / 128 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM / iOS 15`
-        },
-        // { id: 3, name: "Apple iPhone 11 64Gb Black", price: 17999, avatar: "https://cdn.comfy.ua/media/x/img/file_2.png"},
-        // { id: 4, name: "Oppo A53s", price: 7990, avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-xiaomi.png"},
-        // { id: 5, name: "Apple iPhone 13 Pro", price: 38499, avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-apple.png"},
-        // { id: 6, name: "Apple iPhone 11 64Gb Black", price: 17999, avatar: "https://cdn.comfy.ua/media/x/img/file_2.png"},
-        // { id: 7, name: "Oppo A53s", price: 7990, avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-xiaomi.png"},
-        // { id: 8, name: "Apple iPhone 13 Pro", price: 38499, avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-apple.png"},
-        // { id: 9, name: "Apple iPhone 11 64Gb Black", price: 17999, avatar: "https://cdn.comfy.ua/media/x/img/file_2.png"},
-        // { id: 10, name: "Oppo A53s", price: 7990, avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-xiaomi.png"},
-        // { id: 11, name: "Apple iPhone 13 Pro", price: 38499, avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-apple.png"},
-        // { id: 12, name: "Apple iPhone 11 64Gb Black", price: 17999, avatar: "https://cdn.comfy.ua/media/x/img/file_2.png"},
-        // { id: 13, name: "Oppo A53s", price: 7990, avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-xiaomi.png"},
-        // { id: 14, name: "Apple iPhone 13 Pro", price: 38499, avatar: "https://cdn.comfy.ua/media/cms/cat_2/smartfony-apple.png"},
-        // { id: 15, name: "Apple iPhone 11 64Gb Black", price: 17999, avatar: "https://cdn.comfy.ua/media/x/img/file_2.png"},
-
+                id: 4,
+                name: "Samsung Galaxy S20 FE (2021) 8/256GB Light Violet (SM-G780GLVHSEK)",
+                price: 18999,
+                avatar: "https://content2.rozetka.com.ua/goods/images/big/176286579.jpg",
+                description:`Стандарт связи
+                2G (GPRS/EDGE)
+                3G (WCDMA/UMTS/HSPA)
+                4G (LTE)
+                Дисплей
+                Диагональ экрана
+                6.5
+                Разрешение дисплея
+                2400 x 1080
+                Тип матрицы
+                Super AMOLED
+                Частота обновления экрана
+                120 Гц
+                Материал экрана
+                Стекло
+                СИМ-карты
+                Количество СИМ-карт
+                2
+                Размеры СИМ-карты
+                Nano-SIM
+                Функции памяти
+                Оперативная память
+                8 ГБ
+                Встроенная память
+                256 ГБ
+                Формат поддерживаемых карт памяти
+                microSD
+                Максимальный объем поддерживаемой карты памяти
+                1 ТБ
+                Комбинированный слот
+                Да
+                Операционная система
+                Операционная система
+                Android` 
+            },{
+                id: 5,
+                name: "ZTE Blade V2020 Smart 4/64GB Grey",
+                price: 3799,
+                avatar: "https://content1.rozetka.com.ua/goods/images/big/33911187.jpg",
+                description:`Стандарт связи
+                2G (GPRS/EDGE)
+                3G (WCDMA/UMTS/HSPA)
+                4G (LTE)
+                Дисплей
+                Диагональ экрана
+                6.82
+                Разрешение дисплея
+                1640 x 720
+                Тип матрицы
+                TFT
+                Материал экрана
+                Стекло
+                СИМ-карты
+                Количество СИМ-карт
+                2
+                Размеры СИМ-карты
+                Nano-SIM
+                Функции памяти
+                Оперативная память
+                4 ГБ
+                Встроенная память
+                64 ГБ
+                Формат поддерживаемых карт памяти
+                microSD
+                Максимальный объем поддерживаемой карты памяти
+                512 ГБ
+                Комбинированный слот
+                Да
+                Операционная система
+                Операционная система
+                Android`  
+            },{
+                id: 6,
+                name: "Motorola Moto G60 6/128GB Haze Gray (PANB0007RS)",
+                price: 6999,
+                avatar: "https://content2.rozetka.com.ua/goods/images/big/220713124.jpg",
+                description: `Стандарт связи
+                2G (GPRS/EDGE)
+                3G (WCDMA/UMTS/HSPA)
+                4G (LTE)
+                Дисплей
+                Диагональ экрана
+                6.8
+                Разрешение дисплея
+                2460 x 1080
+                Тип матрицы
+                IPS
+                Частота обновления экрана
+                120 Гц
+                СИМ-карты
+                Количество СИМ-карт
+                2
+                Размеры СИМ-карты
+                Nano-SIM
+                Функции памяти
+                Оперативная память
+                6 ГБ
+                Встроенная память
+                128 ГБ
+                Формат поддерживаемых карт памяти
+                microSD
+                Максимальный объем поддерживаемой карты памяти
+                1 ТБ
+                Операционная система
+                Операционная система
+                Android`
+            },{
+                id: 7,
+                name: "Poco X3 Pro 8/256GB Frost Blue (774255)",
+                price: 8999,
+                avatar: "https://content.rozetka.com.ua/goods/images/big/167484105.jpg",
+                description: `Стандарт связи
+                2G (GPRS/EDGE)
+                3G (WCDMA/UMTS/HSPA)
+                4G (LTE)
+                Дисплей
+                Диагональ экрана
+                6.67
+                Разрешение дисплея
+                2400 x 1080
+                Тип матрицы
+                LCD
+                Частота обновления экрана
+                120 Гц
+                Материал экрана
+                Стекло (Gorilla Glass 6)
+                СИМ-карты
+                Количество СИМ-карт
+                2
+                Размеры СИМ-карты
+                Nano-SIM
+                Функции памяти
+                Оперативная память
+                8 ГБ
+                Встроенная память
+                256 ГБ
+                Формат поддерживаемых карт памяти
+                microSD
+                Максимальный объем поддерживаемой карты памяти
+                1 ТБ
+                Комбинированный слот
+                Да
+                Операционная система
+                Операционная система
+                Android` 
+            },{
+                id: 8,
+                name: "Xiaomi Redmi 9A 2/32GB Granite Gray (M2006C3LG)",
+                price: 3199,
+                avatar: "https://content2.rozetka.com.ua/goods/images/big/138170557.jpg",
+                description: `Стандарт связи
+                2G (GPRS/EDGE)
+                3G (WCDMA/UMTS/HSPA)
+                4G (LTE)
+                Дисплей
+                Диагональ экрана
+                6.53
+                Разрешение дисплея
+                1600 х 720
+                Тип матрицы
+                IPS
+                Материал экрана
+                Стекло
+                СИМ-карты
+                Количество СИМ-карт
+                2
+                Размеры СИМ-карты
+                Nano-SIM
+                Функции памяти
+                Оперативная память
+                2 ГБ
+                Встроенная память
+                32 ГБ
+                Формат поддерживаемых карт памяти
+                microSD
+                Максимальный объем поддерживаемой карты памяти
+                256 ГБ
+                Комбинированный слот
+                Нет
+                Операционная система
+                Операционная система
+                Android` 
+            },{
+                id: 9,
+                name: "Xiaomi 11T 8/128GB Meteorite Gray",
+                price: 12499,
+                avatar: "https://content.rozetka.com.ua/goods/images/big/220277489.jpg",
+                description:`Стандарт связи
+                2G (GPRS/EDGE)
+                3G (WCDMA/UMTS/HSPA)
+                4G (LTE)
+                5G
+                Дисплей
+                Диагональ экрана
+                6.67
+                Разрешение дисплея
+                2400 x 1080
+                Тип матрицы
+                AMOLED
+                Материал экрана
+                Стекло (Gorilla Glass Victus)
+                СИМ-карты
+                Количество СИМ-карт
+                2
+                Размеры СИМ-карты
+                Nano-SIM
+                Функции памяти
+                Оперативная память
+                8 ГБ
+                Встроенная память
+                128 ГБ
+                Максимальный объем поддерживаемой карты памяти
+                Нет
+                Операционная система
+                Операционная система
+                Android
+                Фронтальная камера
+                Количество фронтальных камер
+                1
+                Количество мегапикселей фронтальной камеры
+                16 Мп
+                Размещение фронтальной камеры
+                Вырез
+                Процессор
+                Процессор
+                Mediatek
+                Название
+                MediaTek Dimensity 1200
+                Тип ядра
+                Cortex-A78 (64bit) + Cortex-A55 (64bit)
+                Видеоядро
+                ARM Mali-G77 MC9
+                Количество ядер
+                8
+                Модель Mediatek
+                Dimensity 1000
+                Частота
+                3.0 ГГц + 2.0 ГГц`  
+            },{
+                id: 10,
+                name: "Samsung Galaxy S21 8/128GB Phantom Grey (SM-G991BZADSEK)",
+                price: 23999,
+                avatar: "https://content1.rozetka.com.ua/goods/images/big/45466672.jpg",
+                description: `Стандарт связи
+                2G (GPRS/EDGE)
+                3G (WCDMA/UMTS/HSPA)
+                4G (LTE)
+                5G
+                Дисплей
+                Диагональ экрана
+                6.2
+                Разрешение дисплея
+                2400 x 1080
+                Тип матрицы
+                Dynamic AMOLED 2X
+                Частота обновления экрана
+                120 Гц
+                Количество точек касания
+                10
+                Материал экрана
+                Стекло (Gorilla Glass Victus)
+                СИМ-карты
+                Количество СИМ-карт
+                2
+                Размеры СИМ-карты
+                Nano-SIM
+                Функции памяти
+                Оперативная память
+                8 ГБ
+                Встроенная память
+                128 ГБ
+                Максимальный объем поддерживаемой карты памяти
+                Нет
+                Количество контактов в телефонной книге
+                Ограничено памятью самого устройства
+                Количество номеров на 1 контакт
+                Ограничено памятью самого устройства
+                Количество символов в названии контакта
+                Ограничено памятью самого устройства
+                Комбинированный слот
+                Нет
+                Операционная система
+                Операционная система
+                Android`
+            },{
+                id: 11,
+                name: "Samsung Galaxy S21 Ultra 12/256GB Phantom Silver (SM-G998BZSGSEK)",
+                price: 39999,
+                avatar: "https://content.rozetka.com.ua/goods/images/big/163104657.jpg",
+                description: `Стандарт связи
+                2G (GPRS/EDGE)
+                3G (WCDMA/UMTS/HSPA)
+                4G (LTE)
+                5G
+                Дисплей
+                Диагональ экрана
+                6.8
+                Разрешение дисплея
+                3200x1440
+                Тип матрицы
+                Dynamic AMOLED 2X
+                Частота обновления экрана
+                120 Гц
+                Количество точек касания
+                10
+                Материал экрана
+                Стекло (Gorilla Glass Victus)
+                СИМ-карты
+                Количество СИМ-карт
+                2
+                Размеры СИМ-карты
+                Nano-SIM
+                Функции памяти
+                Оперативная память
+                12 ГБ
+                Встроенная память
+                256 ГБ
+                Максимальный объем поддерживаемой карты памяти
+                Нет
+                Количество контактов в телефонной книге
+                Ограничено памятью самого устройства
+                Количество номеров на 1 контакт
+                Ограничено памятью самого устройства
+                Количество символов в названии контакта
+                Ограничено памятью самого устройства
+                Комбинированный слот
+                Нет
+                Операционная система
+                Операционная система
+                Android`
+            },{
+                id: 12,
+                name: "OPPO A74 4/128GB Blue",
+                price: 7555,
+                avatar: "https://content.rozetka.com.ua/goods/images/big/251915906.jpg",
+                description: `Стандарт связи
+                2G (GSM)
+                3G (WCDMA/UMTS/HSPA)
+                4G (LTE)
+                Дисплей
+                Диагональ экрана
+                6.43
+                Разрешение дисплея
+                2340 x 1080
+                Тип матрицы
+                AMOLED
+                Частота обновления экрана
+                60 Гц
+                СИМ-карты
+                Количество СИМ-карт
+                2
+                Размеры СИМ-карты
+                Nano-SIM
+                Функции памяти
+                Оперативная память
+                4 ГБ
+                Встроенная память
+                128 ГБ
+                Максимальный объем поддерживаемой карты памяти
+                Нет
+                Операционная система
+                Операционная система
+                Android` 
+            },{
+                id: 13,
+                name: "Vivo V21 8/128GB Sunset Dazzle",
+                price: 13999,
+                avatar: "https://content.rozetka.com.ua/goods/images/big/185946356.jpg",
+                description: `Стандарт связи
+                2G (GPRS/EDGE)
+                3G (WCDMA/UMTS/HSPA)
+                4G (LTE)
+                Дисплей
+                Диагональ экрана
+                6.44
+                Разрешение дисплея
+                2404х1080
+                Тип матрицы
+                AMOLED
+                Частота обновления экрана
+                90 Гц
+                Количество точек касания
+                10
+                Материал экрана
+                Стекло (Schott Xensation UP)
+                СИМ-карты
+                Количество СИМ-карт
+                2
+                Размеры СИМ-карты
+                Nano-SIM
+                Функции памяти
+                Оперативная память
+                8 ГБ
+                Встроенная память
+                128 ГБ
+                Формат поддерживаемых карт памяти
+                microSD
+                Максимальный объем поддерживаемой карты памяти
+                1 ТБ
+                Количество контактов в телефонной книге
+                Ограничено памятью самого устройства
+                Количество номеров на 1 контакт
+                Ограничено памятью самого устройства
+                Количество символов в названии контакта
+                Ограничено памятью самого устройства
+                Комбинированный слот
+                Да
+                Операционная система
+                Android` 
+            },{
+                id: 14,
+                name: "Huawei P Smart 2021 NFC 128GB Green",
+                price: 47999,
+                avatar: "https://content2.rozetka.com.ua/goods/images/big/163104727.png",
+                description:`Стандарт связи
+                2G (GPRS/EDGE)
+                3G (WCDMA/UMTS/HSPA)
+                4G (LTE)
+                Дисплей
+                Диагональ экрана
+                6.67
+                Разрешение дисплея
+                2400 x 1080
+                Тип матрицы
+                IPS
+                СИМ-карты
+                Количество СИМ-карт
+                2
+                Размеры СИМ-карты
+                Nano-SIM
+                Функции памяти
+                Оперативная память
+                4 ГБ
+                Встроенная память
+                128 ГБ
+                Формат поддерживаемых карт памяти
+                microSD
+                Операционная система
+                Android`  
+            },{
+                id: 15,
+                name: "Asus ROG Phone 5 12/256GB Phantom Black (90AI0051-M01260)",
+                price: 27777,
+                avatar: "https://content2.rozetka.com.ua/goods/images/big/174558133.jpg",
+                description: `Стандарт связи
+                2G (GPRS/EDGE)
+                3G (WCDMA/UMTS/HSPA)
+                4G (LTE)
+                5G
+                Дисплей
+                Диагональ экрана
+                6.78
+                Разрешение дисплея
+                2448x1080
+                Тип матрицы
+                AMOLED
+                Частота обновления экрана
+                144 Гц
+                Количество точек касания
+                10
+                Материал экрана
+                Стекло (Gorilla Glass Victus)
+                СИМ-карты
+                Количество СИМ-карт
+                2
+                Размеры СИМ-карты
+                Nano-SIM
+                Функции памяти
+                Оперативная память
+                12 ГБ
+                Встроенная память
+                256 ГБ
+                Максимальный объем поддерживаемой карты памяти
+                Нет
+                Операционная система
+                Операционная система
+                Android
+                Фронтальная камера
+                Количество фронтальных камер
+                1
+                Количество мегапикселей фронтальной камеры
+                24 Мп
+                Дополнительно
+                Портретное фото
+                Процессор
+                Процессор
+                Qualсomm Snapdragon
+                Название
+                Qualcomm Snapdragon 888
+                Тип ядра
+                Kryo 680
+                Видеоядро
+                Qualcomm Adreno 660
+                Количество ядер
+                8`
+            },{
+                id: 16,
+                name: "Apple iPhone 13 Pro Max 128GB Gold",
+                price: 41499,
+                avatar: "https://content2.rozetka.com.ua/goods/images/big/221216157.jpg",
+                description: `Стандарт связи
+                2G (GPRS/EDGE)
+                3G (WCDMA/UMTS/HSPA)
+                4G (LTE)
+                5G
+                Дисплей
+                Диагональ экрана
+                6.7
+                Разрешение дисплея
+                2778x1284
+                Тип матрицы
+                OLED (Super Retina XDR)
+                Частота обновления экрана
+                120 Гц
+                Количество точек касания
+                10
+                Материал экрана
+                Ceramic Shield
+                СИМ-карты
+                Количество СИМ-карт
+                2
+                Размеры СИМ-карты
+                Nano-SIM
+                eSIM
+                Функции памяти
+                Встроенная память
+                128 ГБ
+                Максимальный объем поддерживаемой карты памяти
+                Нет
+                Комбинированный слот
+                Нет
+                Операционная система
+                Операционная система
+                iOS
+                Фронтальная камера
+                Количество фронтальных камер
+                1
+                Количество мегапикселей фронтальной камеры
+                12 Мп
+                Особенности фронтальной камеры
+                Поддержка 4К съемки
+                Стабилизация
+                Фронтальная вспышка
+                Размещение фронтальной камеры
+                Челка
+                Вид фронтальной вспышки
+                Программная
+                Запись видео фронтальной камеры
+                4K / 3840x2160 / стереозвук
+                Дополнительно
+                Камера 12 Мп / Диафрагма ƒ/2.2 / Режим «Портрет» с улучшенным эффектом боке и функцией «Глубина» / Портретное освещение (шесть вариантов: Естественный свет, Студийный свет, Контурный свет, Сценический свет, Сценический свет — ч/б, Светлая тональность — ч/б) / Animoji и Memoji / Ночной режим / Технология Deep Fusion / Smart HDR 4 / Фотографические стили / Формат Apple ProRAW / Режим «Киноэффект» для съёмки видео с малой / глубиной резкости (1080p с частотой 30 кадров в секунду) / Съёмка HDR‑видео в стандарте Dolby Vision до 4K с частотой 60 кадров в секунду / Съёмка видео 4K с частотой 24, 25, 30 или 60 кадров в секунду / Съёмка HD‑видео 1080p с частотой 25, 30 или 60 кадров в секунду / Съёмка видео ProRes до 4K с частотой 30 кадров в секунду / (1080p с частотой 30 кадров в секунду для модели 128 ГБ)* / Запись замедленного видео 1080р с частотой 120 кадров в секунду / Режим «Таймлапс» со стабилизацией изображения / Видео «Таймлапс» в Ночном режиме / Кинематографическая стабилизация видео (4K, 1080p и 720p) / Функция QuickTake / Широкий цветовой диапазон для фотографий и Live Photos / Коррекция искажений объектива / Вспышка Retina Flash / Автоматическая стабилизация изображения / Серийная съёмка
+                `  
+            },{
+                id: 17,
+                name: "Samsung Galaxy Z Flip3 8/128GB Green (SM-F711BZGASEK/SM-F711BZGBSEK)",
+                price: 24999,
+                avatar: "https://content.rozetka.com.ua/goods/images/big/201805041.jpg",
+                description: `Стандарт связи
+                2G (GPRS/EDGE)
+                3G (WCDMA/UMTS/HSPA)
+                4G (LTE)
+                5G
+                Дисплей
+                Диагональ экрана
+                6.7 + 1.9
+                Разрешение дисплея
+                2640x1080 + 512х260
+                Тип матрицы
+                Super AMOLED + Dynamic AMOLED 2X
+                Частота обновления экрана
+                120 Гц
+                Материал экрана
+                Стекло (Gorilla Glass Victus)
+                СИМ-карты
+                Количество СИМ-карт
+                2
+                Размеры СИМ-карты
+                Nano-SIM
+                eSIM` 
+            },{
+                id: 18,
+                name: "ZTE Blade A3 2020 1/32GB NFC Red",
+                price: 2299,
+                avatar: "https://content.rozetka.com.ua/goods/images/big/23846471.jpg",
+                description: `Стандарт связи
+                2G (GPRS/EDGE)
+                3G (WCDMA/UMTS/HSPA)
+                4G (LTE)
+                Дисплей
+                Диагональ экрана
+                5.45
+                Разрешение дисплея
+                1440 x 720
+                Тип матрицы
+                IPS
+                Материал экрана
+                Стекло
+                СИМ-карты
+                Количество СИМ-карт
+                2
+                Размеры СИМ-карты
+                Nano-SIM
+                Функции памяти
+                Оперативная память
+                1 ГБ
+                Встроенная память
+                32 ГБ
+                Формат поддерживаемых карт памяти
+                microSD
+                Максимальный объем поддерживаемой карты памяти
+                128 ГБ
+                Комбинированный слот
+                Нет
+                Операционная система
+                Android` 
+            },{
+                id: 19,
+                name: "OPPO A54 4/64GB Black",
+                price: 5777,
+                avatar: "https://content2.rozetka.com.ua/goods/images/big/251913908.jpg",
+                description: `Стандарт связи
+                2G (GSM)
+                3G (WCDMA/UMTS/HSPA)
+                4G (LTE)
+                Дисплей
+                Диагональ экрана
+                6.51
+                Разрешение дисплея
+                1600 х 720
+                Тип матрицы
+                IPS
+                Частота обновления экрана
+                60 Гц
+                Количество точек касания
+                10
+                СИМ-карты
+                Количество СИМ-карт
+                2
+                Размеры СИМ-карты
+                Nano-SIM
+                Функции памяти
+                Оперативная память
+                4 ГБ
+                Встроенная память
+                64 ГБ
+                Формат поддерживаемых карт памяти
+                microSD
+                Максимальный объем поддерживаемой карты памяти
+                256 ГБ
+                Комбинированный слот
+                Нет` 
+            },{
+                id: 20,
+                name: "Realme 8 6/128GB Cyber Black (RMX3086)",
+                price: 7399,
+                avatar: "https://content1.rozetka.com.ua/goods/images/big/247638436.jpg",
+                description: `Стандарт связи
+                2G (GPRS/EDGE)
+                3G (WCDMA/UMTS/HSPA)
+                4G (LTE)
+                Дисплей
+                Диагональ экрана
+                6.4
+                Разрешение дисплея
+                2400 x 1080
+                Тип матрицы
+                Super AMOLED
+                Частота обновления экрана
+                60 Гц
+                СИМ-карты
+                Количество СИМ-карт
+                2
+                Размеры СИМ-карты
+                Nano-SIM
+                Функции памяти
+                Оперативная память
+                6 ГБ
+                Встроенная память
+                128 ГБ
+                Формат поддерживаемых карт памяти
+                microSD
+                Максимальный объем поддерживаемой карты памяти
+                256 ГБ
+                Комбинированный слот
+                Нет
+                Операционная система
+                Android` 
+            }
+       
     ];
 
     public async getById(id: number): Promise<Product> {
